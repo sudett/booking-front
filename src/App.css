@@ -1,38 +1,47 @@
-.App {
-  text-align: center;
+:root {
+  --color-gray-primary: #7e7e7e;
+  --color-gray-secondary: #eeeeee;
+  --color-purple-primary: #9867c5;
+  --color-red-primary: #bb0a1e;
+  --color-red-secondary: #ffdcd1;
+  --color-green-primary: #228b22;
+  --color-green-secondary: #c3ffaf;
+  --color-yellow-primary: #fbb117;
+  --color-yellow-secondary: #fffee0;
+  --color-blue-primary: #0a1172;
+  --color-blue-secondary: #1e90ff;
+  --color-blue-tertiary: #f0f8ff;
+  --color-gray-1: #aaa;
+  --shadow-primary-light: 0.3rem 0.3rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+  --shadow-primary-dark: 0.3rem 0.3rem 0.5rem 0.5rem rgba(255, 255, 255, 0.2);
+  --shadow-secondary-light: 0.1rem 0.1rem 0.2rem 0.2rem rgba(0, 0, 0, 0.05);
+  --padding-primary: 2rem;
+  --border-radius-primary: 0.5rem;
+  --max-width: 110rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body {
+  font-family: "Roboto";
+  font-size: 1.5rem;
 }
 
-.App-link {
-  color: #61dafb;
+ul {
+  list-style: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a {
+  text-decoration: none;
 }

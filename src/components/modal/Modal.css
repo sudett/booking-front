@@ -1,0 +1,65 @@
+.modal__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #fff;
+  padding: 3rem;
+  border-radius: 0.3rem;
+}
+
+.modal__close {
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.modal__group {
+  display: flex;
+  /* align-items: center; */
+  gap: 5rem;
+  padding: 2rem;
+}
+
+.modal__info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.modal__max-people,
+.modal__price {
+  font-weight: bold;
+}
+
+.modal__rooms {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  font-size: 1rem;
+  color: gray;
+}
+
+.modal__number {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__btn {
+  align-self: flex-end;
+  padding: 1rem;
+  background-color: var(--color-blue-secondary);
+}

@@ -1,0 +1,12 @@
+.hotels {
+  position: relative;
+  display: grid;
+  grid-template-columns: 28rem 1fr;
+  gap: 2rem;
+  max-width: var(--max-width);
+  margin: 2rem auto;
+}
+
+.hotels__container {
+  grid-column: 2 / 3;
+}

@@ -1,0 +1,48 @@
+.search-box {
+  position: sticky;
+  top: 2rem;
+  align-self: flex-start;
+  width: 28rem;
+  background-color: var(--color-yellow-primary);
+  border-radius: 0.5rem;
+  padding: 1.5rem 1rem;
+  margin-bottom: 2rem;
+}
+
+.search-box__title {
+  padding-bottom: 2rem;
+}
+
+.search-box__group {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1.5rem;
+}
+
+.search-box__input {
+  border: none;
+  outline: none;
+  padding: 1rem 0.5rem;
+}
+
+.search-box__option-group {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+}
+
+.search-box__option-input {
+  width: 7rem;
+  padding: 0.5rem;
+}
+
+.btn--search-box {
+  width: 100%;
+  background-color: var(--color-blue-secondary);
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.react-datepicker__input-container input {
+  width: 100%;
+}

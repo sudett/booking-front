@@ -1,0 +1,39 @@
+.favorites {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  margin-bottom: 5rem;
+}
+
+.favorites__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+  grid-template-rows: 40rem;
+  gap: 2rem;
+}
+
+.favorite__img {
+  height: 60%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.favorite__title {
+  padding: 0.5rem 0 1.5rem;
+}
+
+.favorite__location {
+  display: inline-block;
+  color: var(--color-gray-1);
+  margin-bottom: 1.5rem;
+}
+
+.favorite__rate {
+  display: inline-block;
+  background-color: var(--color-blue-primary);
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 3px;
+  margin-top: 1rem;
+  margin-right: 1rem;
+}

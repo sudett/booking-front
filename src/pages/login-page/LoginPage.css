@@ -1,0 +1,45 @@
+.login__image {
+  background-image: url("https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8bmF0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.login__overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.login__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.login__label {
+  display: block;
+  color: #fff;
+  padding-bottom: 0.5rem;
+}
+
+.login__input {
+  padding: 0.75rem;
+  outline: none;
+}
+
+.login__btn {
+  background-color: var(--color-blue-secondary);
+  color: #fff;
+  padding: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.error-message {
+  color: var(--color-red-primary);
+  font-size: 2rem;
+}

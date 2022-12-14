@@ -1,0 +1,23 @@
+.properties {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  margin-bottom: 5rem;
+}
+
+.title {
+  padding-bottom: 2rem;
+}
+
+.properties__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  grid-template-rows: 30rem;
+  gap: 2rem;
+}
+
+.property__img {
+  width: 100%;
+  height: 80%;
+  border-radius: 0.5rem;
+  object-fit: cover;
+}

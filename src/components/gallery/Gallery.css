@@ -1,0 +1,61 @@
+.gallery {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.gallery__container {
+  height: inherit;
+}
+
+.gallery__img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 70vw;
+  height: 70vh;
+  object-fit: cover;
+  display: none;
+}
+
+.gallery__img--active {
+  transform: translate(-50%, -50%);
+  display: block;
+}
+
+.gallery__img--next {
+  transform: translate(50%, -50%);
+}
+
+.gallery__img--prev {
+  transform: translate(-150%, -50%);
+}
+
+.btn--close {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  cursor: pointer;
+  font-size: 2rem;
+  fill: #fff;
+}
+
+.btn--left,
+.btn--right {
+  position: absolute;
+  top: 50%;
+  font-size: 2.5rem;
+  fill: #fff;
+  cursor: pointer;
+}
+
+.btn--left {
+  left: 5rem;
+}
+
+.btn--right {
+  right: 5rem;
+}
