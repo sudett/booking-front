@@ -4,9 +4,9 @@ import { useFetch } from "../../hooks/useFetch";
 import "./Cities.css";
 
 const cities = [
-  "https://images.unsplash.com/photo-1589327934270-659692dd1d28?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
-  "https://images.unsplash.com/photo-1485871981521-5b1fd3805eee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-  "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=873&q=80",
+  "https://cf.bstatic.com/xdata/images/city/square250/613095.webp?k=8caf960d96a59e284ac1518ac8777e89d17fda6572acd84dbec151f627c7bf07&o=",
+  "https://cf.bstatic.com/xdata/images/xphoto/800x640/140026622.jpg?k=5dddc4cabdbdf1459a8ae377f721bf47976e9ed92a1e9625456aa7faf18637df&o=",
+  "https://images.freeimages.com/images/large-previews/0ca/madrid-cathedral-1056659.jpg",
 ];
 
 const Cities = () => {

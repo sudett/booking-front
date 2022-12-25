@@ -13,14 +13,14 @@ import { MdLocationOn } from "react-icons/md";
 import "./SingleHotel.css";
 
 const hotelImages = [
-  "https://images.unsplash.com/photo-1565031491910-e57fac031c41?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80",
-  "https://images.unsplash.com/photo-1554009975-d74653b879f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=327&q=80",
-  "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-  "https://images.unsplash.com/photo-1551918120-9739cb430c6d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
-  "https://images.unsplash.com/photo-1630582837298-49d1927726e5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80",
-  "https://images.unsplash.com/photo-1462539405390-d0bdb635c7d1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=920&q=80",
-  "https://images.unsplash.com/photo-1573052905904-34ad8c27f0cc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80",
-  "https://images.unsplash.com/photo-1562778612-e1e0cda9915c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+  "https://cf.bstatic.com/xdata/images/hotel/max1024x768/343299148.jpg?k=7127b198ef04f693ace112d7f97b41277b41ab1d11f0fdba4bc8453bc6a900fa&o=&hp=1",
+  "https://cf.bstatic.com/xdata/images/hotel/max1024x768/124965989.jpg?k=1d2bcce6cb2b44d8c02aa0bcc00a3fd508101526c4ac075242ef48bf7e8d183c&o=&hp=1",
+  "https://cf.bstatic.com/xdata/images/hotel/max1024x768/407809978.jpg?k=ba211bb599c23f859091cff0ef710f4e8a909c48f1f81856d5b303e5cb70f1d9&o=&hp=1",
+  "https://cf.bstatic.com/xdata/images/hotel/max1024x768/40723751.jpg?k=abc3cfda67abbe544c3076d06ae6806182d467213b08c8910c7813e882385f64&o=&hp=1",
+  "https://cf.bstatic.com/xdata/images/hotel/max1024x768/219532111.jpg?k=776dad0bd6c695581d2ffe5aa3e7476df84c489ee5851e0065e91491a2ce3985&o=&hp=1",
+  "https://cf.bstatic.com/xdata/images/hotel/max1024x768/276434861.jpg?k=e30a0a752e167238d759a0224f01a276ba80fcfde3152e8cae458f1706163d4a&o=&hp=1",
+  "https://cf.bstatic.com/xdata/images/hotel/max1024x768/38670637.jpg?k=d55f2de332ba0ea6c539d7df365223d7df231e60f84ad16e736f558df03b2894&o=&hp=1",
+  "https://cf.bstatic.com/xdata/images/hotel/max1024x768/339449269.jpg?k=81d021cee00345f3dbdcb6850d796c6335810681e8c91949b2141b9cb4e68a75&o=&hp=1",
 ];
 
 const SingleHotel = () => {

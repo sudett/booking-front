@@ -5,10 +5,10 @@ import { useFetch } from "../../hooks/useFetch";
 import "./FavoriteHomes.css";
 
 const favorites = [
-  "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-  "https://images.unsplash.com/photo-1560185009-5bf9f2849488?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-  "https://images.unsplash.com/photo-1539922631499-09155cc609a4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-  "https://images.unsplash.com/photo-1444201983204-c43cbd584d93?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+  "https://cf.bstatic.com/xdata/images/hotel/max1024x768/314254879.jpg?k=992f817bb542896dfbd547bb4627477965633d86a215c401edf18acdb58a3ef0&o=&hp=1",
+  "https://cf.bstatic.com/xdata/images/hotel/max1024x768/283811207.jpg?k=5cd846c8c5048875a60993648421e5a2616fade4690546e56d2668c880fa4e35&o=&hp=1",
+  "https://cf.bstatic.com/xdata/images/hotel/max1024x768/364215508.jpg?k=12b6215ec59895715a477e82b5eba7bfe8b827319c9aa78c119d3ed3b964c38d&o=&hp=1",
+  "https://cf.bstatic.com/xdata/images/hotel/max1024x768/262919692.jpg?k=3c4065fce5754a6a6f1d0dc3e805b3026c327f9f956e49a8bded505885de31ae&o=&hp=1",
 ];
 
 const FavoriteHomes = () => {
