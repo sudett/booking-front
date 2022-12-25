@@ -17,7 +17,7 @@ const Modal = ({ setIsModalOpen, hotelId }) => {
   const navigate = useNavigate();
 
   const { data, loading } = useFetch(
-    `http://localhost:8800/api/hotels/rooms/${hotelId}`
+    `https://magnificent-top-hat-bull.cyclic.app/api/hotels/rooms/${hotelId}`
   );
 
   const getDates = function (startDate, endDate) {
@@ -56,7 +56,7 @@ const Modal = ({ setIsModalOpen, hotelId }) => {
       await Promise.all(
         selectedRooms.map((roomId) => {
           const res = axios.put(
-            `http://localhost:8800/api/rooms/availability/${roomId}`,
+            `https://magnificent-top-hat-bull.cyclic.app/api/rooms/availability/${roomId}`,
             { dates: getDates(dates.startDate, dates.endDate) }
           );
           return res.data;

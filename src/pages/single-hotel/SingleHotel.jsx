@@ -32,7 +32,7 @@ const SingleHotel = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const { data, loading } = useFetch(
-    `http://localhost:8800/api/hotels/${hotelId}?city=${destination}&min=${price.minPrice}&max=${price.maxPrice}`
+    `https://magnificent-top-hat-bull.cyclic.app/api/hotels/${hotelId}?city=${destination}&min=${price.minPrice}&max=${price.maxPrice}`
   );
 
   const days = () => {

@@ -13,7 +13,7 @@ const properties = [
 
 const Properties = () => {
   const { data, loading } = useFetch(
-    "http://localhost:8800/api/hotels/countbytype?types=hotel,apartment,resort,villa,cabin"
+    `https://magnificent-top-hat-bull.cyclic.app/api/hotels/countbytype?types=hotel,apartment,resort,villa,cabin`
   );
 
   return (

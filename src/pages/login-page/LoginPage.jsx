@@ -23,7 +23,7 @@ const LoginPage = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:8800/api/auth/login",
+        `https://magnificent-top-hat-bull.cyclic.app/api/auth/login`,
         {
           username: usernameRef.current.value,
           password: passwordRef.current.value,
@@ -36,8 +36,6 @@ const LoginPage = () => {
       dispatch({ type: actionTypes.LOGIN_FAILURE, payload: err.response.data });
     }
   };
-
-  console.log(auth);
 
   return (
     <div className="login__image">

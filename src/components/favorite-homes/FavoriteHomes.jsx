@@ -13,7 +13,8 @@ const favorites = [
 
 const FavoriteHomes = () => {
   const { data, loading } = useFetch(
-    "http://localhost:8800/api/hotels?featured=true&limit=4&min=100&max=500"
+    // "https://magnificent-top-hat-bull.cyclic.app/api/hotels?featured=true&limit=4&min=100&max=500"
+    `https://magnificent-top-hat-bull.cyclic.app/api/hotels?featured=true`
   );
 
   return (

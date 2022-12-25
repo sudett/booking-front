@@ -11,7 +11,7 @@ const cities = [
 
 const Cities = () => {
   const { loading, data, errMessage } = useFetch(
-    "http://localhost:8800/api/hotels/countbycity?cities=london,paris,madrid"
+    `https://magnificent-top-hat-bull.cyclic.app/api/hotels/countbycity?cities=london,paris,madrid`
   );
 
   return (

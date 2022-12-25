@@ -27,7 +27,7 @@ const HotelsPage = () => {
   const { dispatch, destination, price } = useGeneralContext();
 
   const { data, loading, fetchData } = useFetch(
-    `http://localhost:8800/api/hotels?city=${destination}&min=${price.minPrice}&max=${price.maxPrice}`
+    `https://magnificent-top-hat-bull.cyclic.app/api/hotels?city=${destination}&min=${price.minPrice}&max=${price.maxPrice}`
   );
 
   useEffect(() => {

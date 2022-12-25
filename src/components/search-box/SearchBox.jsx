@@ -13,7 +13,7 @@ const SearchBox = ({ fetchData }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     fetchData(
-      `http://localhost:8800/api/hotels?city=${destination}&min=${price.minPrice}&max=${price.maxPrice}`
+      `https://magnificent-top-hat-bull.cyclic.app/api/hotels?city=${destination}&min=${price.minPrice}&max=${price.maxPrice}`
     );
   };
 
