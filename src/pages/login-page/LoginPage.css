@@ -1,5 +1,5 @@
 .login__image {
-  background-image: url("https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8bmF0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+  background-image: url("https://cf.bstatic.com/xdata/images/hotel/max1024x768/200896158.jpg?k=4b44098c5d0989f8770bc68298b2f8ed1c0a3a95591569f572f6234101b72831&o=&hp=1");
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -42,4 +42,10 @@
 .error-message {
   color: var(--color-red-primary);
   font-size: 2rem;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.show-error {
+  opacity: 1;
 }

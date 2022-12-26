@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 
 import { useFetch } from "../../hooks/useFetch";
@@ -27,7 +27,7 @@ const SingleHotel = () => {
   const { hotelId } = useParams();
   const navigate = useNavigate();
 
-  const { dispatch, destination, price, dates, auth } = useGeneralContext();
+  const { destination, price, dates, auth } = useGeneralContext();
   const [galleryIsOpen, setGalleryIsOpen] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -42,17 +42,13 @@ const SingleHotel = () => {
     return Math.ceil(milliseconds / (1000 * 60 * 60 * 24));
   };
 
-  useEffect(() => {
-    dispatch({ type: "setPage", payload: "single-hotel" });
-  });
-
   const identifyClasses = (idx) => {
     if (idx === 0) return "gallery__img0";
     if (idx === 1) return "gallery__img1";
   };
 
   const handleReserve = () => {
-    if (!auth.user) return navigate("/login");
+    if (!auth.user) return navigate("/login", { state: { hotelId } });
 
     setIsModalOpen(true);
   };

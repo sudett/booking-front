@@ -2,7 +2,7 @@ import actionTypes from "./ActionTypes";
 
 export const INITIAL_STATE = {
   page: "home",
-  destination: "",
+  destination: "madrid",
   dates: {
     startDate: new Date(),
     endDate: new Date(),

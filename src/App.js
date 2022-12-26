@@ -1,5 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 
+import { useGeneralContext } from "./contexts/general-context/GeneralContext";
+
 import HomePage from "./pages/home-page/HomePage";
 import HotelsPage from "./pages/hotels-page/HotelsPage";
 import SingleHotel from "./pages/single-hotel/SingleHotel";
@@ -10,9 +12,11 @@ import LoginPage from "./pages/login-page/LoginPage";
 import "./App.css";
 
 function App() {
+  const { page } = useGeneralContext();
+
   return (
     <div>
-      <Header />
+      {page !== "login" && <Header />}
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/hotels">
@@ -21,7 +25,7 @@ function App() {
         </Route>
         <Route path="/login" element={<LoginPage />} />
       </Routes>
-      <Footer />
+      {page !== "login" && <Footer />}
     </div>
   );
 }
