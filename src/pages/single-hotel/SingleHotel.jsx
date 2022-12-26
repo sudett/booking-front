@@ -74,6 +74,7 @@ const SingleHotel = () => {
                 </div>
                 <button className="btn btn--book">Book now</button>
               </div>
+
               <div className="single-hotel__gallery">
                 {data.photos.length > 0
                   ? data.photos

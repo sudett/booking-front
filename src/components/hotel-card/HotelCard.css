@@ -88,6 +88,35 @@
 .btn--available {
   background-color: var(--color-blue-secondary);
   color: #fff;
-  padding: 1rem 4rem;
+  padding: 1rem 3rem;
   margin-top: 1rem;
+}
+
+@media only screen and (max-width: 62em) {
+  .hotel__info {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 55em) {
+  .hotel {
+    grid-template-columns: 1fr;
+  }
+
+  .hotel__img {
+    width: 100%;
+    height: 20rem;
+  }
+}
+
+@media only screen and (max-width: 40em) {
+  .search-box {
+    position: relative;
+    top: 0;
+    justify-self: stretch;
+  }
+
+  /* .hotel__availability {
+    align-self: flex-end;
+  } */
 }

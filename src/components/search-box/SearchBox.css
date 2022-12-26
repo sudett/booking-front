@@ -46,3 +46,11 @@
 .react-datepicker__input-container input {
   width: 100%;
 }
+
+@media only screen and (max-width: 40em) {
+  .search-box {
+    position: relative;
+    top: 0;
+    width: 100%;
+  }
+}

@@ -1,11 +1,13 @@
 .single-hotel {
   max-width: var(--max-width);
   margin: 3rem auto;
+  padding: 0 2rem;
 }
 
 .single-hotel__top {
   display: flex;
   justify-content: space-between;
+  gap: 4rem;
 }
 
 .single-hotel__title {
@@ -93,4 +95,33 @@
   padding: 1rem;
   background-color: var(--color-blue-secondary);
   color: #fff;
+}
+
+@media only screen and (max-width: 40em) {
+  .single-hotel__info {
+    grid-template-columns: 1fr;
+  }
+
+  .single-hotel__top {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 30em) {
+  .single-hotel__gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .single-hotel__gallery-img {
+    height: 17rem;
+  }
+
+  .gallery__img0 {
+    grid-row: 1 / 2;
+  }
+
+  .gallery__img1 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
 }
