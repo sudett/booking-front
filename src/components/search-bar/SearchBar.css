@@ -2,7 +2,7 @@
   display: flex;
   max-width: var(--max-width);
   margin: 0 auto;
-  transform: translateY(-50%);
+  transform: translateY(-80%);
   border: 3px solid var(--color-yellow-primary);
   background-color: #fff;
   border-radius: 3px;
@@ -15,7 +15,7 @@
 .search__group {
   display: flex;
   align-items: center;
-  padding: 0 2rem;
+  padding: 0 1rem;
   border-right: 3px solid var(--color-yellow-primary);
 }
 
@@ -39,6 +39,12 @@
   border: none;
   outline: none;
   width: 90%;
+}
+
+.search__cities {
+  width: 40%;
+  padding: 0.5rem;
+  margin-left: auto;
 }
 
 .search__arrow {
@@ -66,4 +72,25 @@
   outline: none;
   padding: 1rem;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 55em) {
+  .search {
+    flex-wrap: wrap;
+    transform: translateY(-20%);
+  }
+
+  .search__group {
+    width: 100%;
+    border-right: none;
+    padding: 2rem;
+  }
+
+  .btn--search {
+    width: 100%;
+  }
+
+  .search__group:not(:last-child) {
+    border-bottom: 3px solid var(--color-yellow-primary);
+  }
 }

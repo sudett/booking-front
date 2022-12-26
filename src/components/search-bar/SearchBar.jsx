@@ -33,11 +33,10 @@ const SearchBar = () => {
     <form className="search" onSubmit={searchHandler}>
       <div className="search__group">
         <RiEarthLine className="icon search__icon" />
-        <input
-          type="search"
-          className="search__location"
+        <label htmlFor="location">Where are you going?</label>
+        <select
+          className="search__location search__cities"
           id="location"
-          placeholder="Where are you going? London, Madrid, Paris..."
           value={destination}
           onChange={(e) =>
             dispatch({
@@ -45,7 +44,11 @@ const SearchBar = () => {
               payload: e.target.value,
             })
           }
-        />
+        >
+          <option value="madrid">Madrid</option>
+          <option value="paris">Paris</option>
+          <option value="london">London</option>
+        </select>
       </div>
 
       <div className="search__group">

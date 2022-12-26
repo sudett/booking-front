@@ -36,6 +36,7 @@
 .hotel__location {
   display: inline-block;
   color: var(--color-blue-secondary);
+  padding-right: 1rem;
 }
 
 .hotel__airport-taxi {

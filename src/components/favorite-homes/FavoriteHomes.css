@@ -1,14 +1,17 @@
 .favorites {
   max-width: var(--max-width);
   margin: 0 auto;
-  margin-bottom: 5rem;
+  /* margin-bottom: 5rem; */
 }
 
 .favorites__container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
-  grid-template-rows: 40rem;
-  gap: 2rem;
+  gap: 1rem;
+}
+
+.favorite__home {
+  height: 40rem;
 }
 
 .favorite__img {

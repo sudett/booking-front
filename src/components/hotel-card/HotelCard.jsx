@@ -29,16 +29,14 @@ const HotelCard = ({
             <div>
               <h3 className="hotel__title">{title}</h3>
               <p>
-                <span className="hotel__location">
-                  {address}, {city} .{" "}
-                </span>
+                <span className="hotel__location">{city}</span>
                 <span>{distance} m from center</span>
               </p>
 
               <span className="hotel__airport-taxi">Free airport taxi</span>
             </div>
             <div>
-              <p>{desc}</p>
+              <p>{desc.slice(0, 200)} ...</p>
 
               <p className="hotel__cancellation">Free cancellation</p>
             </div>

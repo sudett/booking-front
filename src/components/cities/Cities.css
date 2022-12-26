@@ -1,7 +1,7 @@
 .cities {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 20rem;
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+
   gap: 2rem;
   max-width: var(--max-width);
   margin: 0 auto;
@@ -12,6 +12,7 @@
   position: relative;
   cursor: pointer;
   z-index: -10;
+  height: 20rem;
 }
 
 .cities__image {

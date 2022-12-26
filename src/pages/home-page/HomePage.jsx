@@ -8,6 +8,8 @@ import Cities from "../../components/cities/Cities";
 import Properties from "../../components/properties/Properties";
 import FavoriteHomes from "../../components/favorite-homes/FavoriteHomes";
 
+import "./HomePage.css";
+
 const HomePage = () => {
   const { dispatch } = useGeneralContext();
 
@@ -16,7 +18,7 @@ const HomePage = () => {
   }, []);
 
   return (
-    <div>
+    <div className="home-page">
       <SearchBar />
       <Cities />
       <Properties />

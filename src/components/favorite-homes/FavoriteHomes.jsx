@@ -24,7 +24,7 @@ const FavoriteHomes = () => {
         {loading
           ? "LOADING"
           : data?.map((item, idx) => (
-              <div key={idx}>
+              <div className="favorite__home" key={idx}>
                 <img
                   className="favorite__img"
                   src={item.photos[0] || favorites[idx]}

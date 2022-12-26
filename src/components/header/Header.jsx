@@ -50,6 +50,13 @@ const Header = () => {
               </Link>
             </li>
           </ul>
+
+          <h1>
+            <Link className="header__link header__link--booking" to="/">
+              Booking
+            </Link>
+          </h1>
+
           {!auth.user ? (
             <div className="btns__container">
               <button className="btn btn--login">Register</button>

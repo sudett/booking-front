@@ -27,10 +27,9 @@ const SearchBox = ({ fetchData }) => {
       <h3 className="search-box__title">Search</h3>
       <div className="search-box__group">
         <label htmlFor="destination">Destination</label>
-        <input
-          className="search-box__input"
-          type="text"
+        <select
           id="destination"
+          className="search-box__input"
           value={destination}
           onChange={(e) =>
             dispatch({
@@ -38,7 +37,11 @@ const SearchBox = ({ fetchData }) => {
               payload: e.target.value,
             })
           }
-        />
+        >
+          <option value="madrid">Madrid</option>
+          <option value="paris">Paris</option>
+          <option value="london">London</option>
+        </select>
       </div>
 
       <div className="search-box__group">

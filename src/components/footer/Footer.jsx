@@ -61,47 +61,49 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="footer__bottom">
-        <ul>
-          {allInfo.map((info, idx) => (
-            <li key={idx}>
-              <Link className="footer__link" to="/">
-                {info}
-              </Link>
-            </li>
-          ))}
-        </ul>
-        <ul>
-          {propertyTypes.map((property, idx) => (
-            <li key={idx}>
-              <Link className="footer__link" to="/">
-                {property}
-              </Link>
-            </li>
-          ))}
-        </ul>
-        <ul>
-          {specials.map((special, idx) => (
-            <li key={idx}>
-              <Link className="footer__link" to="/">
-                {special}
-              </Link>
-            </li>
-          ))}
-        </ul>
-        <ul>
-          {services.map((service, idx) => (
-            <li key={idx}>
-              <Link className="footer__link" to="/">
-                {service}
-              </Link>
-            </li>
-          ))}
-        </ul>
+      <div className="footer__bottom-container">
+        <div className="footer__bottom">
+          <ul>
+            {allInfo.map((info, idx) => (
+              <li key={idx}>
+                <Link className="footer__link" to="/">
+                  {info}
+                </Link>
+              </li>
+            ))}
+          </ul>
+          <ul>
+            {propertyTypes.map((property, idx) => (
+              <li key={idx}>
+                <Link className="footer__link" to="/">
+                  {property}
+                </Link>
+              </li>
+            ))}
+          </ul>
+          <ul>
+            {specials.map((special, idx) => (
+              <li key={idx}>
+                <Link className="footer__link" to="/">
+                  {special}
+                </Link>
+              </li>
+            ))}
+          </ul>
+          <ul>
+            {services.map((service, idx) => (
+              <li key={idx}>
+                <Link className="footer__link" to="/">
+                  {service}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <p className="footer__copy-right">
+          Copyright &copy; 2022 Booking. All rights reserved.
+        </p>
       </div>
-      <p className="footer__copy-right">
-        Copyright &copy; 2022 Booking. All rights reserved.
-      </p>
     </footer>
   );
 };
